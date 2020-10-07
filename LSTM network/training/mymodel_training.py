@@ -234,10 +234,10 @@ if __name__ == "__main__":
         
     #assign 1500 data set to train set and the rest to valid set
         #data structure: 0:25 input parameters; 25:205 normalized output; end: peak value of the output
-    
 
-    train_size=int(len(results*0.8)/100)*100
-    valid_size=int(len(results*0.1)/100)*100
+    bsize=100
+    train_size=int(len(results)*0.9/bsize)*bsize
+    valid_size=len(results)-train_size
     
     train_set = results[:train_size,0:13], results[:train_size,13:514], results[:train_size,-2:-1] #parameters,distribution,peak value
     valid_set = results[-valid_size:,0:13], results[-valid_size:,13:514], results[-valid_size:,-2:-1]
