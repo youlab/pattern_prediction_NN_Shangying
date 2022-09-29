@@ -8,7 +8,5 @@ Shangying Wang, Kai Fan, Nan Luo, Yangxiaolu Cao, Feilun Wu, Carolyn Zhang, Kath
 doi: https://doi.org/10.1101/559559
 
 
-we use python 3.5 platform and implement tensorflow 2.0 for neural network design and trainings/tests
-
 Please cite our paper if you used or learned from our codes.
 
